@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><!-- top of the website (mainly used to import or refer to files) -->
+    <style>
+        /* styles the css part that is in the html part like importing urls and other features */
+        @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+        /* imports text font*/
+        body {
+            font-family: "Tektur", sans-serif;
+            /* this imports the font from google named "Tektur"*/
+        }
+
+        .icon-gap {
+            margin-right: 50px;
+            /* this css implementation "icon-gap" is used to give spacing in the "contacts" area*/
+        }
+
+        .icon-container {
+            /* this aligns the icon to the centre */
+            text-align: center;
+        }
+        }
+    </style>
+    <link rel="icon" type="images/png" href="images/icons8-database-32.png"><!-- icon of the website -->
+    <title>Daniel Sukhanov</title> <!-- title of the website -->
+    <meta charset="UTF-8"> <!-- type of encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ensures it is accessable on any device -->
+    <link rel="stylesheet" href="styles.css"> <!-- refers to the css file -->
+    <style>
+        img {
+            border-radius: 50%;
+        }
+
+        /* Remove border-radius from images in the projects section */
+        #projects img {
+            border-radius: initial;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider-thumb"></div>
+    <script src="follow.js"></script>
+    <header>
+        <div class="container-title">
+            <h1>Daniel Sukhanov</h1> <!-- title of the portfolio -->
+            <img src="images/dandar.png" alt="Avatar" style="width:200px"> <!-- adds image to the title -->
+            <nav>
+                <ul>
+                    <li><a href="#about"><button class="bn632-hover bn20">About</button></a></li>
+                    <li><a href="#projects"><button class="bn632-hover bn20">Projects</button></a></li>
+                    <!-- Corrected link -->
+                    <li><a href="#contact"><button class="bn632-hover bn20">Contact</button></a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <section id="about" class="text-container-1"><!-- this refers back to the nav -->
+        <div class="container-1">
+            <div class="above-container-1">
+                <h2>About Me</h2>
+                <p style="font-size: 30px;">I'm a junior software engineer with a passion for creating efficient and
+                    user-friendly software solutions.</p>
+                <p style="font-size: 30px;">My skills include proficiency in programming languages such as Python, CSS,
+                    HTML, and JavaScript.</p> <!-- a little about me with <p> attributes-->
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="" class="icon-gap">
+                        <img src="images/html.png" alt="Html" class="icon-gap" style="width:75px; height:75px;">
+                        <img src="images/CSS.png" alt="CSS" class="icon-gap" style="width:75px; height:75px;">
+                        <img src="images/python.png" alt="Python" class="icon-gap" style="width:75px; height:75px;">
+                        <img src="images/JS.png" alt="Javascript" class="icon-gap" style="width:75px; height:75px;"><!-- inputs the images from the folder to the carousel -->
+                    </div> 
+                    <button class="prev-btn">&#10094;</button>
+                    <button class="next-btn">&#10095;</button><!--buttons to move between images -->
+                </div>
+                <!-- End of Image carousel -->
+            </div>
+
+    </section>
+    <section id="progress" class="progress"><!-- this refers back to the nav -->
+        <ul>
+            <h3>
+                <center>Upcoming/In progress </center>
+            </h3>
+            <br>
+            <li>ISL AI translator: Coming Soon!</li>
+            <br>
+            <li> AI Chess bot: Coming Soon!</li>
+            <br>
+            <li>Portfolio Website: In progress</li>
+        </ul> <!-- this is a list of the current projects or upcoming projects that is planned to be done -->
+    </section>
+    <section id="pleaseendthis" class="imded">
+        <!-- please not that those code shouldnt take this long but it had but anyways this code identifies and classes this section so it can be recognised by css and has width and height with a src of a fish :) -->
+        <iframe width="1400" height="650" src="https://www.youtube.com/embed/RHuQqLxmEyg?si=L9dIt1P6XVCtb10F"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+    </section>
+    <section id="projects"><!-- this refers back to the nav -->
+        <div class="container">
+            <h2 class="project">Projects</h2><!-- displays the title of the projects section -->
+            <!-- Image carousel inserted here -->
+            <div class="carousel1">
+                <div class="carousel-images1">
+                    <img src="images/proj1.png" class="icon-gap" alt="Project 1">
+                    <img src="images/proj2.png" class="icon-gap" alt="Project 2">
+                    <img src="images/proj3.png" class="icon-gap" alt="Project 3"> <!-- inputs the images from the folder to the carousel -->
+                </div>
+                <button class="prev-btn">&#10094;</button>
+                <button class="next-btn">&#10095;</button><!--buttons to move between images -->
+            </div>
+            <!-- End of Image carousel -->
+            <div class="project">
+            </div>
+           
+        </div>
+    </section>
+
+    <section id="contact" class="background-container"> <!-- this refers back to the nav -->
+        <div class="container-right">
+            <h2 class="contacts">Contact Me</h2>
+            <div class="icon-container"> <!--this classes the following div under "icon-container" -->
+                <a href="https://github.com/DandarGaming" class="icon-gap">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github 
+profile"width="75px" height="75px"> <!-- this links to the github page with an github icon -->
+                </a>
+                <a href="mailto:danielsukhanov2007@gmail.com">
+                    <img src="images/email.png" alt="emailaddress" width="75px" height="75px">
+                </a> <!-- this links to the email address with an email icon -->
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="background-container">
+        <div class="container">
+            <p class="copyright">&copy; 2024 Daniel Sukhanov - Junior Software Engineer</p>
+        </div> <!-- this displays the footer with a p attribute inside the footer -->
+    </footer>
+    <script src="project.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script> <!-- these link to the javascript files -->
+    
+</body>
+
+</html>
