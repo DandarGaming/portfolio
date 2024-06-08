@@ -1,0 +1,273 @@
+nav {
+    margin-top: 20px; /* Adjust the margin value as needed */
+}
+
+.container-1,.container,.container-title h1 {
+    color: white;
+} 
+.above-container-1,.above-container p,h2 {
+    color: white;
+} /* makes the p,h1 and h2 of the following attributes white*/
+.above-container-1 {
+    position: relative;
+}
+.above-container {
+    position: relative;
+}
+.above-container-right {
+    position: relative;
+}
+/* positions the container to the desired placement */
+.imded {
+    position: absolute;
+    top: -50%; /* Adjust the top position to be below the above-container-1 */
+    margin-left: 230px;
+    margin-right: auto;  
+    opacity: 1;
+    /*sets the position of the video */
+}
+
+#pleaseendthis {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+} /* makes the border curved and the overflow hidden with the position set as centred (relative)*/
+#pleaseendthis iframe {
+    border-radius: 20px; /* Same border radius as the container */
+}
+
+.container-1 {
+    position: absolute;
+    top: calc(100% + 50px); /* Adjust the top position to be below the above-container-1 */
+    left: -5%;
+    transform: translateX(-50%);
+}
+.progress {
+    position: absolute;
+    top: -90%; /* Adjust the top position to be below the above-container-1 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.progress li,h3 {
+     color: white;
+    font-size: 45px;
+    text-shadow: 2px 2px 2px black;
+}
+/* makes the progress list and h3 of the following attributes white and font size 45px */
+
+.container {
+    position: absolute;
+    top: -40px; /* Adjust the top position to be below the above-container-1 */
+    left: 22%;;
+    transform: translateX(-50%);
+}
+
+.container-right {
+    position: absolute;
+    top: 5px; /* Adjust the top position to be below the above-container-1 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.highlight {
+    border: 2px solid #ff0000; /* For example, border highlighting */
+} /* this highlights the text with a red border */
+.project {
+    text-align: center;
+    color: white;
+    font-size: 70px;
+}/* this centers the text and makes it white and font size 70px */
+/* Header styles */
+header {
+    text-align: center;
+    color: #000000;
+    padding: px 0;
+} /* this centers the text and makes it black and font size 50px */
+.contacts {
+    text-align:right;
+    color:white;
+    font-size: 35px;
+}  /* this centers the text and makes it white and font size 35px */
+.copyright {
+    text-align:center;
+}   /* this centers the text */
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}  /* this centers the text */
+.carousel1 {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}  /* this centers the text */
+.carousel-images1 {
+    display: flex;
+    transition: transform 0.5s ease;
+} }  /* this helps the carousel to move smoothly */
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+/* this helps the carousel to move smoothly */
+.carousel-images img {
+    width: 100%;
+    height: auto;
+} /* this helps the carousel to move smoothly */
+.carousel-images1 img {
+    width: 100%;
+    height: auto;
+}
+ /* this helps the carousel to move smoothly */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+ /* this sets the colour of the arrow buttons */
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}  /* this adds buttons to the curousel */
+.container,.container-1,.container-right,.progress,.container-title {
+    max-width: 800px;
+    margin: 200px auto; /* Added margin to create space between containers */
+    padding: 20px;
+    background-color: rgba(7, 242, 203, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: background-color 0.4s ease-in-out; /* Added background-color transition */
+    opacity: 1; /* Set initial opacity to 0.5 */
+}
+
+
+.container-title:hover,.container:hover,.container-1:hover,.container-right:hover,.progress:hover {
+    background-color: rgba(7, 242, 203, 1);
+    opacity: 1; /* Set opacity to 1 on hover */
+}
+
+
+.container-title > *:not(img):not(button):not(h1):not(ul):not(p) {
+    opacity: 1; /* Set opacity to 1 for other elements */
+}
+
+.container-title nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+} /* this centers the text */
+
+.container-title nav ul li {
+    margin: 0 10px;
+} /* adds a margin */
+
+.container-title nav ul li:first-child {
+    margin-left: 0;
+}
+
+.container-title nav ul li:last-child {
+    margin-right: 0;
+}
+
+.container-title nav ul li a {
+    color: #29000c;
+    text-decoration: none;
+    text-align: center;
+}
+
+.container-title .bn632-hover {
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+}
+
+.container-title .bn632-hover:hover {
+    background-position: 100% 0;
+}
+
+.container-title .bn632-hover:focus {
+    outline: none;
+}
+
+.container-title .bn632-hover.bn20 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6b8dd6, #8e37d7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, #532ee5, #00aaff);
+}
+
+.slider-thumb::before {
+    position: absolute;
+    content: "";
+    left: var(--x);
+    top: var(--y);
+    width: 450px;
+    height: 450px;
+    background: #1f38b7;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+}
+
+@keyframes sliderShape {
+    0%, 100% {
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+    34% {
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+        transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+    }
+    50% {
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+    67% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+        transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+    }
+}
+.above-container-1,.container-1 {
+    top: 50%;
+    left:100%:
+}
+.above-container,.above-container-1,.progress {
+  max-width: 800px;
+      margin: 200px auto; /* Added margin to create space between containers */
+      padding: 20px;
+      background-color: rgb(1, 106, 244, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+      transition: background-color 0.4s ease-in-out; /* Added background-color transition */
+      opacity: 1; /* Set initial opacity to 0.5 */
+  }
+}
+
+
